@@ -1,0 +1,480 @@
+/* Basic reset for margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set font styles */
+body {
+    font-family: Verdana, Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: rgb(238, 238, 238);
+    padding: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+}
+
+nav ul li {
+    display: flex;
+    margin: 0 15px;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #595959;
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+h3 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+p { 
+    padding: 0.5rem;
+}
+
+/* Content Sections */
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.home {
+    background-color: white;
+    color: black;
+}
+
+.home-banner {
+    display: flex;
+    justify-content: space-evenly;
+    vertical-align: middle;
+    gap: 10px;
+    padding: 16px;
+}
+
+.home-side-image {
+    width: 20%;
+    height: auto;
+    object-fit: contain;
+}
+
+.home-text {
+    text-align: left;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.home-text h2 {
+    text-align: center;
+}
+
+.about {
+    background-color: white;
+    color: black;
+}
+
+.about-apt, .services-list-container {
+    flex-direction: row;
+    padding: 0rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-apt-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    font-size: 1.15em;
+}
+
+.about-staff {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.about-member {
+    flex-direction: row;
+    padding: 0rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.about-member-image {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 50%;
+}
+
+.about-member-title {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    width: 50%;
+}
+
+.about-member-text {
+    display: block;
+    align-self: center;
+    /* flex-direction: column; */
+    text-align: left;
+    width: 78.5%
+}
+
+.headshot {
+    display: flex;
+    align-items: center;
+    vertical-align: center;
+    width: 50%;
+}
+
+.mission-statement {
+    text-align: center;
+    background-color: rgb(98, 152, 177);
+}
+
+.mission-statement-text {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contact-us {
+    display: flex;
+    justify-content: space-around;
+    height: 66vh;
+    background-color: white;
+}
+
+.contact-us-column {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    align-items: center;
+}
+
+.contact-us-column h3 {
+    font-size: 21px;
+}
+
+.contact-us img {
+    width: 85%;
+    height: auto;
+    object-fit: contain;
+}
+
+.contact-us-extra-directions {
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contact-us-general-head {
+    display: flex;
+    justify-content: left;
+}
+
+.contact-us-general-info {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-us-bottom-info {
+    text-align: center;
+    color: black;
+    background-color: rgb(98, 152, 177);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    padding: 1rem;
+}
+
+.contact-us-bottom-info-info {
+    text-align: center;
+}
+
+/* form things */
+.contact-us-form {
+    width: 90%;
+    border-color: #333;
+}
+
+.services {
+    width: 70%;
+    margin: auto;
+    text-align: left;
+    font-size: 1.15em;
+}
+
+.services h1 {
+    text-align: center;
+}
+
+.services p {
+    padding: 1.5em;
+}
+
+.services-list {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+    padding: 1.5em;
+    font-weight: bold;
+}
+
+.services-list ul li {
+    padding: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 22px); /* Adjust for padding and border */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensure padding and border are inside the element's width/height */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 100px;
+}
+
+button {
+    background-color: rgb(98, 152, 177);;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 95%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* for smaller screens */
+@media (max-width: 1100px) {
+
+    .about-apt {
+        flex-direction: column;
+        padding: 0rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .about-apt-text {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .about-member {
+        flex-direction: column;
+        padding: 0rem;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .about-member-image {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+    }
+    
+    
+    .about-member-title {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .contact-us {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .contact-us-column {
+        width: 90%;
+        align-items: center;
+    }
+
+    .directions-map {
+        height: 45vw;
+    }
+
+    .contact-us-bottom-info {
+        flex-direction: column;
+    }
+}
+
+/* for mobile */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    justify-content: space-between;
+}
+
+.hamburger .bar {
+    width: 100%;
+    height: 5px;
+    background-color: rgb(69, 89, 99);
+}
+
+@media (max-width: 768px) {
+    header {
+        justify-items: right;
+    }
+    nav {
+        display: none; /* Hide the regular menu */
+    }
+
+    body p {
+        width: 90%;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 100%;
+        height: 5px;
+        background-color: #333;
+        /* transition: 0.4s; */
+    }
+
+    /* Optional: Styling for when the menu is open (e.g., a close button) */
+    .change .bar:nth-child(1) {
+        transform: translateY(10px) rotate(45deg);
+    }
+
+    .change .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .change .bar:nth-child(3) {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+    /* Basic styling for the menu items (initially hidden) */
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        position: absolute;
+        top: 49px; /* Adjust based on your hamburger menu's position */
+        right: 0;
+        width: 150px;
+        padding: 10px;
+    }
+
+    .menu a {
+        padding: 8px 0;
+        text-decoration: none;
+        color: black;
+    }
+
+    .show-menu {
+        display: flex;
+    }
+
+    .about-member-text {
+        display: block;
+        align-self: center;
+        /* flex-direction: column; */
+        text-align: left;
+        width: 100%
+    }
+}
+
+@media (min-width: 769px) {
+    /* Show the regular navigation menu on large screens */
+    nav {
+        display: flex;
+    }
+
+    /* Hide the hamburger icon on larger screens */
+    .hamburger-menu {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+}
