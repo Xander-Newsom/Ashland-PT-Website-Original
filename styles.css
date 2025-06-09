@@ -168,7 +168,7 @@ section {
 .contact-us {
     display: flex;
     justify-content: space-around;
-    height: 66vh;
+    height: auto;
     background-color: white;
 }
 
