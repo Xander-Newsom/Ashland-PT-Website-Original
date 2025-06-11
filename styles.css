@@ -112,6 +112,12 @@ section {
     font-size: 1.15em;
 }
 
+.mtt-top-text {
+    width: 50%; 
+    margin: auto; 
+    text-align: left;
+}
+
 .about-staff {
     display: flex;
     flex-direction: column;
@@ -455,12 +461,21 @@ footer {
         display: flex;
     }
 
+
+    .home-text {
+        width: 95%;
+    }
+
+    .mission-statement-text {
+        width: 95%;
+    }
+
+    .mtt-top-text {
+        width: 95%; 
+    }
+
     .about-member-text {
-        display: block;
-        align-self: center;
-        /* flex-direction: column; */
-        text-align: left;
-        width: 100%
+        width: 95%
     }
 }
 
